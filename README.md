@@ -9,8 +9,11 @@ let patriciaTrie = SwiftTrie()
 // Insert a string
 let didInsert = patriciaTrie.insertString("Banana")
 // Search for all strings containing ban
-let containBan = patriciaTrie.getAllStringsForPrefix("ban")
+let containBan = patriciaTrie.getAllStringsForPrefix("Ban")
 // Delete a string
 let didDelete = patriciaTrie.deleteString("Banana")
 ```
 
+## Upcoming Features
+- Convert from returning a boolean to using errors for inserting and deleting
+- Enable better multithreading support if modifying the trie
